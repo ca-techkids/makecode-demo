@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeCode-like Block Programming</title>
+    <!-- Blockly CDN -->
+    <script src="https://unpkg.com/blockly/blockly_compressed.js"></script>
+    <script src="https://unpkg.com/blockly/blocks_compressed.js"></script>
+    <script src="https://unpkg.com/blockly/msg/js/ja.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h1>ブロックプログラミング デモ</h1>
+    </div>
+    <div id="main-container">
+        <div id="blocklyDiv"></div>
+    </div>
+
+    <!-- Blockly Toolbox XML -->
+    <xml id="toolbox" style="display: none">
+        <category name="基本" colour="#4C97FF">
+            <block type="chat_command">
+                <field name="COMMAND">run</field>
+            </block>
+            <block type="agent_move">
+                <field name="DIRECTION">前</field>
+                <field name="DISTANCE">1</field>
+            </block>
+            <block type="agent_turn">
+                <field name="DIRECTION">左</field>
+            </block>
+            <block type="repeat_n">
+                <field name="TIMES">1</field>
+            </block>
+            <block type="agent_destroy">
+                <field name="DIRECTION">前</field>
+            </block>
+            <block type="agent_place">
+                <field name="DIRECTION">前</field>
+            </block>
+            <block type="agent_slot">
+                <field name="SLOT">1</field>
+            </block>
+        </category>
+    </xml>
+
+    <script src="main.js"></script>
+</body>
+</html>

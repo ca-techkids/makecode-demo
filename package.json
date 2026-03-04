@@ -1,0 +1,11 @@
+{
+  "name": "makecode-demo",
+  "version": "1.0.0",
+  "description": "MakeCode-like block programming demo",
+  "scripts": {
+    "start": "serve ."
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}

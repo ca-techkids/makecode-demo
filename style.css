@@ -1,0 +1,57 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    /* Prevent body scrolling */
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    background-color: #61B2E4;
+    /* QUREO-like Light Blue */
+    color: white;
+    padding: 10px 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#main-container {
+    display: flex;
+    flex: 1;
+    /* Take up remaining height */
+    width: 100%;
+    position: relative;
+}
+
+#blocklyDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Custom Toolbox styling */
+.blocklyToolboxDiv {
+    background-color: #F0F0F0;
+    border-right: 1px solid #CCC;
+}
+
+.blocklyTreeSelected .blocklyTreeLabel {
+    color: #fff !important;
+}
